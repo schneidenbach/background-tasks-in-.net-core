@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    hostname: "rabbitmq"
+    environment:
+      RABBITMQ_DEFAULT_USER: "user"
+      RABBITMQ_DEFAULT_PASS: "password"
+    ports:
+      - "5672:5672" # RabbitMQ broker
+      - "15672:15672" # Management interface
+    volumes:
+      - "rabbitmq_data:/var/lib/rabbitmq"
+      - "rabbitmq_log:/var/log/rabbitmq"
+    restart: always
+
+volumes:
+  rabbitmq_data:
+  rabbitmq_log:

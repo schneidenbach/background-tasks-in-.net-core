@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-BackgroundServiceExamples.MessageBasedWorker-E42A1CCC-4216-4179-90D2-76BC3DBC6172</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.1" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BackgroundServiceExamples.Core\BackgroundServiceExamples.Core.csproj" />
+    </ItemGroup>
+</Project>
