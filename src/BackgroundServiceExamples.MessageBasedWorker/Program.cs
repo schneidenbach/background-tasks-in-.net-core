@@ -2,10 +2,6 @@ using BackgroundServiceExamples.MessageBasedWorker;
 using MassTransit;
 
 IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<Worker>();
-    })
     .UseMassTransit((context, configurator) =>
     {
         configurator.UsingRabbitMq((rabbitcontext, rabbitMqConfigurator) =>
