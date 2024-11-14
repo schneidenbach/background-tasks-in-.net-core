@@ -6,6 +6,8 @@ The project contains a bunch of small example projects to support the accompanie
 
 ## Presented/Presenting at:
 
+Update Conference Prague 2024  
+Beer City Code 2024  
 DevConf Poland 2023
 
 ## License
