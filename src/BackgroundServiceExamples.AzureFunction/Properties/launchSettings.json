@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BackgroundServiceExamples.AzureFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7092",
+      "launchBrowser": false
+    }
+  }
+}
